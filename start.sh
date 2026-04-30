@@ -21,6 +21,7 @@ if [[ ! -f "$INIT_MARKER" ]]; then
   echo "[初始化] 正在启用所需的 GCP API..."
   gcloud services enable cloudresourcemanager.googleapis.com
   gcloud services enable compute.googleapis.com
+  gcloud services enable cloudbilling.googleapis.com
 
   if [[ -d "$VENV_DIR" && ! -f "$VENV_DIR/bin/activate" ]]; then
     echo "[初始化] 检测到 venv 不完整，正在重新创建..."

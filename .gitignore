@@ -1,3 +1,4 @@
 .ace-tool/
 .venv/
 .gcp_free_initialized
+profiles.json
